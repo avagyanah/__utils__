@@ -1,6 +1,7 @@
 const { isEqual } = require("./isEqual");
 const { random } = require("../math/random");
 const { swap } = require("./swap");
+const { sample } = require("./sample");
 
 function shuffle(arr, noRepeat = false) {
   const origin = noRepeat && Array.from(arr);
@@ -13,7 +14,7 @@ function shuffle(arr, noRepeat = false) {
 
 function _shuffle(arr) {
   for (let i = 0; i < arr.length - 1; ++i) {
-    const rndIndex = Math.floor(Math.random() * arr.length);
+    const rndIndex = random(0, arr.length - 1);
     const deleted = arr.splice(rndIndex, 1)[0];
     arr.push(deleted);
   }
