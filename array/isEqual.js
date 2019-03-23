@@ -1,5 +1,5 @@
-function isEqual(arr1, arr2) {
-  return JSON.stringify(arr1) === JSON.stringify(arr2);
+function isEqual(array1, array2) {
+  return JSON.stringify(array1) === JSON.stringify(array2);
 }
 
 module.exports = { isEqual };
