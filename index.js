@@ -8,6 +8,7 @@ const { shuffle } = require("./array/shuffle");
 const { swap } = require("./array/swap");
 const { remove } = require("./array/remove");
 const { add } = require("./array/add");
+const { Map } = require("./collection/map");
 
 console.warn(`random 0 - 10 | ${random(0, 10, 2)}`);
 console.warn(`shuffle 1,2,3 | ${shuffle([1, 2, 3])}`);
