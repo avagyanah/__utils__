@@ -1,10 +1,10 @@
 const { remove } = require("../array/remove");
 
-const Map = new Function(`this._keys = []; this._values = []`);
-// function Map() {
-//   this._keys = [];
-//   this._values = [];
-// }
+// const Map = new Function(`this._keys = []; this._values = []`);
+function Map() {
+  this._keys = [];
+  this._values = [];
+}
 
 Map.prototype.delete = function(key) {
   const index = this._keys.indexOf(key);
@@ -13,8 +13,15 @@ Map.prototype.delete = function(key) {
 };
 
 Map.prototype.set = function(key, value) {
-  this._keys.push(key);
-  this._values.push(value);
+  const existingIndex = this._keys.indexOf(key);
+  const isUnique = existingIndex === -1;
+
+  if (isUnique) {
+    this._keys.push(key);
+    this._values.push(value);
+  } else {
+    this._values[existingIndex] = value;
+  }
 };
 
 Map.prototype.get = function(key) {
