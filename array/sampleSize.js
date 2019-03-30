@@ -13,4 +13,5 @@ function sampleSize(array, size) {
   }
   return newArr;
 }
-module.exports = { sampleSize };
+
+exports.sampleSize = sampleSize;

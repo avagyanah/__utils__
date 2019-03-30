@@ -3,4 +3,4 @@ function random(min, max, toFixed = 0) {
   return (Math.min(min, max) + diff).toFixed(toFixed);
 }
 
-module.exports = { random };
+exports.random = random;

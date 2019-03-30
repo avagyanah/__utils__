@@ -37,4 +37,4 @@ Object.defineProperty(Set.prototype, "values", {
   }
 });
 
-module.exports = { Set };
+exports.Set = Set;

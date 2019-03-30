@@ -14,4 +14,4 @@ function remove(array, index) {
   return arr;
 }
 
-module.exports = { remove };
+exports.remove = remove;

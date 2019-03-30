@@ -62,4 +62,4 @@ Object.defineProperty(Map.prototype, "values", {
   }
 });
 
-module.exports = { Map };
+exports.Map = Map;

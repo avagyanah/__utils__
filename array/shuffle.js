@@ -20,4 +20,5 @@ function _shuffle(array) {
   }
   return array;
 }
-module.exports = { shuffle };
+
+exports.shuffle = shuffle;

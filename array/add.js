@@ -17,4 +17,4 @@ function add(array, value, index) {
   return arr;
 }
 
-module.exports = { add };
+exports.add = add;

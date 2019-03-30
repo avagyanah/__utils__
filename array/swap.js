@@ -8,4 +8,4 @@ function swap(array, i1, i2) {
   return copy;
 }
 
-module.exports = { swap };
+exports.swap = swap;
