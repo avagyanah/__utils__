@@ -1,5 +1,6 @@
 // MATH
 const { random } = require("./math/random");
+const { uuid } = require("./math/uuid");
 // ARRAY
 const { isEqual } = require("./array/isEqual");
 const { sample } = require("./array/sample");
